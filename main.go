@@ -27,4 +27,7 @@ func main() {
 	fmt.Printf("My name is %v and age is %v\n", name, age)
 	fmt.Printf("My name is %s and age is %d\n", name, age)
 	fmt.Printf("name type = %T\nage type = %T\nnum type = %T\n", name, age, num)
+
+	str := fmt.Sprintf("My name is %v and age is %v\n", name, age)
+	fmt.Println("\nString is: ", str)
 }
