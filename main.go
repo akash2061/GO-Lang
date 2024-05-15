@@ -20,6 +20,7 @@ func main() {
 
 	var age uint8 = 20
 	num := 2.01
-	fmt.Println(age, "\t", reflect.TypeOf(age), "\t", unsafe.Sizeof(age))
-	fmt.Println(num, "\t", reflect.TypeOf(num), "\t", unsafe.Sizeof(num))
+	fmt.Println(age, "\t", reflect.TypeOf(age), "\tSize = ", unsafe.Sizeof(age))
+	fmt.Println(num, "\t", reflect.TypeOf(num), "\tSize = ", unsafe.Sizeof(num))
+	fmt.Println(name2, "\t", reflect.TypeOf(name2), "\tSize = ", unsafe.Sizeof(name2))
 }
