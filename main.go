@@ -16,6 +16,8 @@ func main() {
 	name2 = "Foo..."
 	fmt.Println(name, "\n", name1, "\n", name2, "\n", name3, "\n", text)
 
-	var age int8 = 20
+	var age uint8 = 20
+	num := 200.01
 	fmt.Println(age)
+	fmt.Println(num)
 }
