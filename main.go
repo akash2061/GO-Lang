@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"reflect"
+	"unsafe"
 )
 
 var text = "This is a global text"
@@ -17,7 +19,7 @@ func main() {
 	fmt.Println(name, "\n", name1, "\n", name2, "\n", name3, "\n", text)
 
 	var age uint8 = 20
-	num := 200.01
-	fmt.Println(age)
-	fmt.Println(num)
+	num := 2.01
+	fmt.Println(age, "\t", reflect.TypeOf(age), "\t", unsafe.Sizeof(age))
+	fmt.Println(num, "\t", reflect.TypeOf(num), "\t", unsafe.Sizeof(num))
 }
