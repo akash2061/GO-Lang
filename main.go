@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var text = "This is a global text"
 
@@ -10,7 +12,10 @@ func main() {
 	var name string = "Morningstar_2061"
 	var name1 = "akash2061"
 	var name2 string
-	name2 = "Foo..."
 	name3 := "Hello"
+	name2 = "Foo..."
 	fmt.Println(name, "\n", name1, "\n", name2, "\n", name3, "\n", text)
+
+	var age int8 = 20
+	fmt.Println(age)
 }
