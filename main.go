@@ -23,4 +23,8 @@ func main() {
 	fmt.Println(age, "\t", reflect.TypeOf(age), "\tSize = ", unsafe.Sizeof(age))
 	fmt.Println(num, "\t", reflect.TypeOf(num), "\tSize = ", unsafe.Sizeof(num))
 	fmt.Println(name2, "\t", reflect.TypeOf(name2), "\tSize = ", unsafe.Sizeof(name2))
+
+	fmt.Printf("My name is %v and age is %v\n", name, age)
+	fmt.Printf("My name is %s and age is %d\n", name, age)
+	fmt.Printf("name type = %T\nage type = %T\nnum type = %T\n", name, age, num)
 }
