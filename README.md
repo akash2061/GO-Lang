@@ -24,5 +24,4 @@ age type = uint8
 num type = float64
 
 String is:  My name is Morningstar_2061 and age is 20
-
 ```
