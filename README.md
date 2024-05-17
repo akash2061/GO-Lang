@@ -27,3 +27,12 @@ String is:  My name is Morningstar_2061 and age is 20
 ```
 
 ## File Structure:
+```
+.
+├── GO-Lang
+├── README.md
+├── go.mod
+└── main.go
+
+1 directory, 4 files
+```
