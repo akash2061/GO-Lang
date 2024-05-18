@@ -2,6 +2,8 @@
 
 ## Here is my Learning-Binary [GO-Lang](https://github.com/akash2061/GO-Lang/blob/master/GO-Lang) Download & run in terminal:
 
+###### Note: navigate to download folder. 📂 
+
 ```
 ./GO-Lang
 ```
@@ -26,7 +28,7 @@ num type = float64
 String is:  My name is Morningstar_2061 and age is 20
 ```
 
-## File Structure:
+## File Structure: 🌲
 ```plaintext
 .
 ├── GO-Lang
