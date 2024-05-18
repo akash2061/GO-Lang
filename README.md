@@ -8,7 +8,7 @@
 ./GO-Lang
 ```
 
-## Current Output:
+## 🗿 Current Output:
 ```
 Hello... Go...!
 Morningstar_2061 
