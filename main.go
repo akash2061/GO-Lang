@@ -6,8 +6,9 @@ import (
 	"log"     //! For Errors
 	"os"      //! Input-Output
 	"reflect" //! TypeOf
-	"strconv" //! To Deal with String Manipulation
-	"unsafe"  //! SizeOf
+	"strconv" //! To Deal with Strings
+	"strings"
+	"unsafe" //! SizeOf
 )
 
 var pl = fmt.Println               //? Print - Alias
@@ -72,5 +73,25 @@ func main() {
 	} else {
 		pl("ERROR 404: Birthday Not Found... \\(^o^)/")
 	}
-	pl("ERROR 404: !true ==",!true)
+	pl("ERROR 404: !true ==", !true)
+
+	pl("\nStrings:")
+	str = "A word"
+	replacer := strings.NewReplacer("A", "Another")
+	str1 := replacer.Replace(str)
+	pl("First string:", str)
+	pl("Second string:", str1)
+	pl("Length of string1:", len(str1))
+	pl("Contains Another:", strings.Contains(str1, "Another"))
+	pl("o Index:", strings.Index(str1, "o"))
+	pl("Replace:", strings.Replace(str1, "o", "0", -1))
+	pl("String1 to Lower:", strings.ToLower(str1))
+	pl("String1 to Upper:", strings.ToUpper(str1))
+	str2 := "H-e-l-l-o--W-o-r-l-d-!"
+	pl("String2: ", str2)
+	pl("Split string2:", strings.Split(str2, "-"))
+
+	pl("\nString Prefix-Suffix: ( NOTE: Word is a tool name <LolCat> )")
+	pl("Prefix:", strings.HasPrefix("LolCat", "Lol"), "\tTrimming Prefix", strings.TrimPrefix("LolCat", "Lol"))
+	pl("Suffix:", strings.HasSuffix("LolCat", "Cat"), "\tTrimming Suffix", strings.TrimSuffix("LolCat", "Cat"))
 }

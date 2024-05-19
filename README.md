@@ -42,6 +42,22 @@ String: cv 50 Atoi: cv1 50 ERROR: <nil> Type1: cv string Type2: cv1 int
 Conditional Statements:
 Too Old... (╥﹏╥)
 ERROR 404: !true == false
+
+Strings:
+First string: A word
+Second string: Another word
+Length of string1: 12
+Contains Another: true
+o Index: 2
+Replace: An0ther w0rd
+String1 to Lower: another word
+String1 to Upper: ANOTHER WORD
+String2:  H-e-l-l-o--W-o-r-l-d-!
+Split string2: [H e l l o  W o r l d !]
+
+String Prefix-Suffix: ( NOTE: Word is a tool name <LolCat> )
+Prefix: true    Trimming Prefix Cat
+Suffix: true    Trimming Suffix Lol
 ```
 
 ## 🌲 File Structure:
