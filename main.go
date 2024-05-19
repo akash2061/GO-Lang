@@ -1,13 +1,15 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-
-	"reflect" // TypeOf
-	"unsafe"  // SizeOf
+	"log"
+	"os"
+	"reflect" //! TypeOf
+	"unsafe"  //! SizeOf
 )
 
-var pl = fmt.Println // Print - Alias
+var pl = fmt.Println //? Print - Alias
 
 var text = "This is a global text"
 
@@ -35,4 +37,12 @@ func main() {
 	fmt.Println("\nString is: ", str)
 
 	pl("Hello... Alias... :)")
+	pl("What is your Name?")
+	reader := bufio.NewReader(os.Stdin)
+	usr_name, err := reader.ReadString('\n')
+	if err == nil {
+		pl("Hello", usr_name)
+	} else {
+		log.Fatal(err)
+	}
 }
