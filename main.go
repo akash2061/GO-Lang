@@ -1,18 +1,17 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"log"
-	"os"
+	"bufio"   //! Read-Input
+	"fmt"     //! Print-Format
+	"log"     //! For Errors
+	"os"      //! Input-Output
 	"reflect" //! TypeOf
-	"strconv"
-	"unsafe" //! SizeOf
+	"strconv" //! To Deal with String Manipulation
+	"unsafe"  //! SizeOf
 )
 
-var pl = fmt.Println //? Print - Alias
-
-var text = "This is a global text"
+var pl = fmt.Println               //? Print - Alias
+var text = "This is a global text" //? Global var
 
 func main() {
 	fmt.Println("Hello... Go...!")
