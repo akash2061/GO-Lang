@@ -6,6 +6,8 @@ import (
 	"unsafe"
 )
 
+var pl = fmt.Println // Print - Alias
+
 var text = "This is a global text"
 
 func main() {
