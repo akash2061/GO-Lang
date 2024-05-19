@@ -6,7 +6,8 @@ import (
 	"log"
 	"os"
 	"reflect" //! TypeOf
-	"unsafe"  //! SizeOf
+	"strconv"
+	"unsafe" //! SizeOf
 )
 
 var pl = fmt.Println //? Print - Alias
@@ -51,4 +52,8 @@ func main() {
 	pl(float64(v1) + v2)
 	v1 = int(v2)
 	pl("Floor of v2:", v1)
+
+	cv := "50000000"
+	cv1, err := strconv.Atoi(cv)
+	pl("String:", cv, "Atoi:", cv1, "ERROR:", err, "Type1:", reflect.TypeOf(cv), "Type2:", reflect.TypeOf(cv1))
 }
