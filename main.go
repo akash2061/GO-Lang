@@ -49,4 +49,6 @@ func main() {
 
 	var v1, v2 = 10, 1.5
 	pl(float64(v1) + v2)
+	v1 = int(v2)
+	pl("Floor of v2:", v1)
 }
