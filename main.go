@@ -52,7 +52,11 @@ func main() {
 	v1 = int(v2)
 	pl("Floor of v2:", v1)
 
-	cv := "50000000"
+	cv := "50"
 	cv1, err := strconv.Atoi(cv)
-	pl("String:", cv, "Atoi:", cv1, "ERROR:", err, "Type1:", reflect.TypeOf(cv), "Type2:", reflect.TypeOf(cv1))
+	pl("String: cv", cv, "Atoi: cv1", cv1, "ERROR:", err, "Type1: cv", reflect.TypeOf(cv), "Type2: cv1", reflect.TypeOf(cv1))
+	cv2 := "3.14"
+	if cv3, err := strconv.ParseFloat(cv2, 32); err == nil {
+		pl(cv3)
+	}
 }
