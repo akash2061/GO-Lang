@@ -47,6 +47,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	pl("Typecast:")
 	var v1, v2 = 10, 1.5
 	pl(float64(v1) + v2)
 	v1 = int(v2)
@@ -59,4 +60,17 @@ func main() {
 	if cv3, err := strconv.ParseFloat(cv2, 32); err == nil {
 		pl(cv3)
 	}
+
+	pl("\nConditional Statements:")
+	iAge := 100
+	if (iAge >= 1) && (iAge <= 18) {
+		pl("Happy Birthday... Underage... ( ͡° ͜ʖ ͡°) ")
+	} else if (iAge == 20) || (iAge == 50) {
+		pl("Happy Birthday... 20 or 50? (ᵕ—ᴗ—) ")
+	} else if iAge >= 65 {
+		pl("Too Old... (╥﹏╥)")
+	} else {
+		pl("ERROR 404: Birthday Not Found... \\(^o^)/")
+	}
+	pl("ERROR 404: !true ==",!true)
 }

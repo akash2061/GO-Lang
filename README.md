@@ -26,6 +26,22 @@ age type = uint8
 num type = float64
 
 String is:  My name is Morningstar_2061 and age is 20
+
+Hello... Alias... :)
+
+What is your Name?
+Foo...
+Hello Foo...
+
+Typecast:
+11.5
+Floor of v2: 1
+String: cv 50 Atoi: cv1 50 ERROR: <nil> Type1: cv string Type2: cv1 int
+3.140000104904175
+
+Conditional Statements:
+Too Old... (╥﹏╥)
+ERROR 404: !true == false
 ```
 
 ## 🌲 File Structure:
