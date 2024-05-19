@@ -32,4 +32,6 @@ func main() {
 
 	str := fmt.Sprintf("My name is %v and age is %v\n", name, age)
 	fmt.Println("\nString is: ", str)
+
+	pl("Hello... Alias... :)")
 }
