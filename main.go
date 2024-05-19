@@ -46,4 +46,7 @@ func main() {
 	} else {
 		log.Fatal(err)
 	}
+
+	var v1, v2 = 10, 1.5
+	pl(float64(v1) + v2)
 }
