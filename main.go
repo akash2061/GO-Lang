@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"reflect"
-	"unsafe"
+
+	"reflect" // TypeOf
+	"unsafe"  // SizeOf
 )
 
 var pl = fmt.Println // Print - Alias
