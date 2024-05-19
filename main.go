@@ -37,7 +37,8 @@ func main() {
 	fmt.Println("\nString is: ", str)
 
 	pl("Hello... Alias... :)")
-	pl("What is your Name?")
+
+	pl("\nWhat is your Name?")
 	reader := bufio.NewReader(os.Stdin)
 	usr_name, err := reader.ReadString('\n')
 	if err == nil {
