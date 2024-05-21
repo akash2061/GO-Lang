@@ -8,6 +8,7 @@ import (
 	"reflect" //! TypeOf
 	"strconv" //! To Convert Strings
 	"strings" //! To Deal with Strings
+	"time"
 	"unicode/utf8"
 	"unsafe" //! SizeOf
 )
@@ -103,4 +104,10 @@ func main() {
 	for i, rune := range rStr {
 		fmt.Printf("%d : %#U : %c\n", i, rune, rune)
 	}
+
+	//! Time
+	pl("\nTime:")
+	now := time.Now()
+	pl(now.Year(), now.Month(), now.Day())
+	pl(now.Hour(), ":", now.Minute(), ":", now.Second())
 }
