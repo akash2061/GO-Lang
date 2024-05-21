@@ -15,6 +15,7 @@ import (
 
 var pl = fmt.Println               //? Print - Alias
 var text = "This is a global text" //? Global var
+var count = 0
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -110,4 +111,6 @@ func main() {
 	now := time.Now()
 	pl(now.Year(), now.Month(), now.Day())
 	pl(now.Hour(), ":", now.Minute(), ":", now.Second())
+
+	count++
 }
