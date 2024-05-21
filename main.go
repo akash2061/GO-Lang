@@ -1,10 +1,10 @@
 package main
 
 import (
-	"bufio" //! Read-Input
-	"fmt"   //! Print-Format
-	"log"   //! For Errors
-	"math/rand"
+	"bufio"        //! Read-Input
+	"fmt"          //! Print-Format
+	"log"          //! For Errors
+	"math/rand"    //! Random Numbers
 	"os"           //! Input-Output
 	"reflect"      //! TypeOf
 	"strconv"      //! To Convert Strings
