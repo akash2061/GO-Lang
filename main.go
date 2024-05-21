@@ -1,16 +1,16 @@
 package main
 
 import (
-	"bufio"   //! Read-Input
-	"fmt"     //! Print-Format
-	"log"     //! For Errors
-	"os"      //! Input-Output
-	"reflect" //! TypeOf
-	"strconv" //! To Convert Strings
-	"strings" //! To Deal with Strings
-	"time"
-	"unicode/utf8"
-	"unsafe" //! SizeOf
+	"bufio"        //! Read-Input
+	"fmt"          //! Print-Format
+	"log"          //! For Errors
+	"os"           //! Input-Output
+	"reflect"      //! TypeOf
+	"strconv"      //! To Convert Strings
+	"strings"      //! To Deal with Strings
+	"time"         //! Time
+	"unicode/utf8" //! Runes-Count
+	"unsafe"       //! SizeOf
 )
 
 var pl = fmt.Println               //? Print - Alias
