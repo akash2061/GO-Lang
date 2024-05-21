@@ -58,6 +58,23 @@ Split string2: [H e l l o  W o r l d !]
 String Prefix-Suffix: ( NOTE: Word is a tool name <LolCat> )
 Prefix: true    Trimming Prefix Cat
 Suffix: true    Trimming Suffix Lol
+
+Runes:
+
+Rune Count:  6
+0 : U+0061 'a' : a
+1 : U+0062 'b' : b
+2 : U+0063 'c' : c
+3 : U+0064 'd' : d
+4 : U+0065 'e' : e
+5 : U+0066 'f' : f
+
+Time:
+2024 May 21
+22 : 44 : 5
+Incrementing Count by 1: 1
+
+Random : 38
 ```
 
 ## 🌲 File Structure:
