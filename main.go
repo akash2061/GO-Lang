@@ -1,9 +1,10 @@
 package main
 
 import (
-	"bufio"        //! Read-Input
-	"fmt"          //! Print-Format
-	"log"          //! For Errors
+	"bufio" //! Read-Input
+	"fmt"   //! Print-Format
+	"log"   //! For Errors
+	"math/rand"
 	"os"           //! Input-Output
 	"reflect"      //! TypeOf
 	"strconv"      //! To Convert Strings
@@ -113,4 +114,8 @@ func main() {
 	pl(now.Hour(), ":", now.Minute(), ":", now.Second())
 
 	count++
+	seedSecs := time.Now().Unix()
+	rand.Seed(seedSecs)
+	randNum := rand.Intn(50) + 1
+	pl("Random :", randNum)
 }
