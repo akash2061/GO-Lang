@@ -8,7 +8,8 @@ import (
 	"reflect" //! TypeOf
 	"strconv" //! To Convert Strings
 	"strings" //! To Deal with Strings
-	"unsafe"  //! SizeOf
+	"unicode/utf8"
+	"unsafe" //! SizeOf
 )
 
 var pl = fmt.Println               //? Print - Alias
@@ -94,4 +95,12 @@ func main() {
 	pl("\nString Prefix-Suffix: ( NOTE: Word is a tool name <LolCat> )")
 	pl("Prefix:", strings.HasPrefix("LolCat", "Lol"), "\tTrimming Prefix", strings.TrimPrefix("LolCat", "Lol"))
 	pl("Suffix:", strings.HasSuffix("LolCat", "Cat"), "\tTrimming Suffix", strings.TrimSuffix("LolCat", "Cat"))
+
+	//! Runes:
+	pl("\nRunes:\n")
+	rStr := "abcdef"
+	pl("Rune Count: ", utf8.RuneCountInString(rStr))
+	for i, rune := range rStr {
+		fmt.Printf("%d : %#U : %c\n", i, rune, rune)
+	}
 }
