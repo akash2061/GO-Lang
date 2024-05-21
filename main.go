@@ -117,5 +117,5 @@ func main() {
 	seedSecs := time.Now().Unix()
 	rand.Seed(seedSecs)
 	randNum := rand.Intn(50) + 1
-	pl("Random :", randNum)
+	pl("\nRandom :", randNum)
 }
