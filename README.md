@@ -74,7 +74,7 @@ Time:
 22 : 44 : 5
 Incrementing Count by 1: 1
 
-Random : 38
+Random : 47
 ```
 
 ## 🌲 File Structure:
