@@ -114,6 +114,7 @@ func main() {
 	pl(now.Hour(), ":", now.Minute(), ":", now.Second())
 
 	count++
+	pl("Incrementing Count by 1:", count)
 	seedSecs := time.Now().Unix()
 	rand.Seed(seedSecs)
 	randNum := rand.Intn(50) + 1
