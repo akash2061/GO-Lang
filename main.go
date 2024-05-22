@@ -120,7 +120,7 @@ func main() {
 	rand.Seed(seedSecs)
 	randNum := rand.Intn(50) + 1
 	pl("\nRandom :", randNum)
-	
+
 	//! There are many math functions
 	pl("\nMath :")
 	pl("Abs(-10) =", math.Abs(-10))
@@ -145,7 +145,24 @@ func main() {
 	pl("Sin(90) =", math.Sin(r90))
 
 	pl("\nFormatting:")
-	fmt.Printf("%9f\n",3.141)
-	fmt.Printf("%.2f\n",3.141592)
-	fmt.Printf("%9.f\n",3.141592)
+	fmt.Printf("%9f\n", 3.141)
+	fmt.Printf("%.2f\n", 3.141592)
+	fmt.Printf("%9.f\n", 3.141592)
+
+	pl("\nFor Loops:")
+	for x := 65; x <= 70; x++ {
+		fmt.Printf("%d - %c\n", x, x)
+	}
+	pl("\nWhile Loops:")
+	fx := 0
+	for fx < 3 {
+		pl("While: ", fx)
+		fx++
+	}
+	for true {
+		seedSecs := time.Now().Unix()
+		rand.Seed(seedSecs)
+		randNum := rand.Intn(50) + 1
+		pl("\nRandom :", randNum)
+	}
 }
