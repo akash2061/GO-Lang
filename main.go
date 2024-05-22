@@ -173,8 +173,17 @@ func main() {
 	}
 
 	pl("\nRange:")
-	aNum := []int{10,20,30}
+	aNum := []int{10, 20, 30}
 	for _, num := range aNum {
 		pl(num)
 	}
+	pl("\nArray:")
+	var arr1 [5]int
+	anum := [5]int{1,2,3}
+	pl("Default Value with Index:")
+	for i, num := range arr1 {
+		pl(i, " : ", num)
+	}
+	pl("Array-1:\t", arr1)
+	pl("Array-2:\t", anum)
 }
