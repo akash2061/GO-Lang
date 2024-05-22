@@ -165,7 +165,7 @@ func main() {
 		// rand.Seed(seedSecs)
 		// randNum := rand.Intn(50) + 1
 		// pl("\nRandom :", randNum)
-		pl(count)
+		pl("True count:",count)
 		count++
 		if count == 5 {
 			break

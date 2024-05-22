@@ -91,6 +91,28 @@ Max(5,4) = 5
 Min(5,4) = 4
 1.570796 radians = 90.000000 degrees
 Sin(90) = 1
+
+Formatting:
+ 3.141000
+3.14
+        3
+
+For Loops:
+65 - A
+66 - B
+67 - C
+68 - D
+69 - E
+70 - F
+
+While Loops:
+While:  0
+While:  1
+While:  2
+True count: 1
+True count: 2
+True count: 3
+True count: 4
 ```
 
 ## 🌲 File Structure:
