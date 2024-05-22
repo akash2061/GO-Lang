@@ -165,10 +165,16 @@ func main() {
 		// rand.Seed(seedSecs)
 		// randNum := rand.Intn(50) + 1
 		// pl("\nRandom :", randNum)
-		pl("True count:",count)
+		pl("True count:", count)
 		count++
 		if count == 5 {
 			break
 		}
+	}
+
+	pl("\nRange:")
+	aNum := []int{10,20,30}
+	for _, num := range aNum {
+		pl(num)
 	}
 }
