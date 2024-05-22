@@ -75,6 +75,22 @@ Time:
 Incrementing Count by 1: 1
 
 Random : 47
+
+Math :
+Abs(-10) = 10
+Pow(4, 2) = 16
+Sqrt(16) = 4
+Cbrt(8) = 2
+Ceil(4.4) = 5
+Floor(4.4) = 4
+Round(4.4) = 4
+Log2(8) = 3
+Log10(100) = 2
+Log(7.389) = 2
+Max(5,4) = 5
+Min(5,4) = 4
+1.570796 radians = 90.000000 degrees
+Sin(90) = 1
 ```
 
 ## 🌲 File Structure:
