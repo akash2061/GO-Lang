@@ -159,13 +159,16 @@ func main() {
 		pl("While: ", fx)
 		fx++
 	}
-
-	for true {
+	true1 := true
+	for true1 {
 		// seedSecs := time.Now().Unix()
 		// rand.Seed(seedSecs)
 		// randNum := rand.Intn(50) + 1
 		// pl("\nRandom :", randNum)
 		pl(count)
 		count++
+		if count == 5 {
+			break
+		}
 	}
 }
