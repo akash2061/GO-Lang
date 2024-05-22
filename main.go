@@ -143,4 +143,9 @@ func main() {
 	d90 := r90 * (180 / math.Pi)
 	fmt.Printf("%f radians = %f degrees\n", r90, d90)
 	pl("Sin(90) =", math.Sin(r90))
+
+	pl("\nFormatting:")
+	fmt.Printf("%9f\n",3.141)
+	fmt.Printf("%.2f\n",3.141592)
+	fmt.Printf("%9.f\n",3.141592)
 }
