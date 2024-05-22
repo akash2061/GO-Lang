@@ -195,4 +195,8 @@ func main() {
 		{7, 8, 9},
 	}
 	pl("\nMatrix:", matrix_1)
+	pl()
+	for i, row := range matrix_1 {
+		pl("Row", i, row)
+	}
 }
