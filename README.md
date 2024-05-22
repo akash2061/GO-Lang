@@ -113,6 +113,29 @@ True count: 1
 True count: 2
 True count: 3
 True count: 4
+
+Range:
+10
+20
+30
+
+Array:
+Default Value with Index:
+0  :  0
+1  :  0
+2  :  0
+3  :  0
+4  :  0
+Array-1:         [0 0 0 0 0]
+Array-2:         [1 2 3 0 0]
+
+Matrix: [[0 0 0] [0 0 0] [0 0 0]]
+
+Matrix: [[1 2 3] [4 5 6] [7 8 9]]
+
+Row 0 [1 2 3]
+Row 1 [4 5 6]
+Row 2 [7 8 9]
 ```
 
 ## 🌲 File Structure:
