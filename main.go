@@ -179,11 +179,14 @@ func main() {
 	}
 	pl("\nArray:")
 	var arr1 [5]int
-	anum := [5]int{1,2,3}
+	anum := [5]int{1, 2, 3}
 	pl("Default Value with Index:")
 	for i, num := range arr1 {
 		pl(i, " : ", num)
 	}
 	pl("Array-1:\t", arr1)
 	pl("Array-2:\t", anum)
+
+	matrix := [3][3]int{}
+	pl("\nMatrix:", matrix)
 }
