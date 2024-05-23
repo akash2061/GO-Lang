@@ -22,6 +22,12 @@ var count = 0                      //? Global Count
 func SayHello() {
 	pl("Hello Function...")
 }
+func add(x int, y int) int {
+	return x + y
+}
+func multi(x float64, y int) float64 {
+	return x * float64(y) * float64(y)
+}
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -261,4 +267,6 @@ func main() {
 	pl("\nSl4-Make:", sl4)
 	pl()
 	SayHello()
+	pl("\nAddition Function:", add(3, 5))
+	pl("\nArea of Circle Function:", multi(3.141592, 5))
 }
