@@ -243,4 +243,13 @@ func main() {
 	// If you change the array the slice also changes
 	sArr[0] = 10
 	pl("sl3 :", sl3)
+	// Changing the slice also changes the array
+	sl3[0] = 1
+	pl("sArr :", sArr)
+
+	// Append a value to a slice (Also overwrites array)
+	sl3 = append(sl3, 12)
+	pl("\nAppend Array with Slice:")
+	pl("sl3 :", sl3)
+	pl("sArr :", sArr)
 }
