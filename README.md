@@ -163,6 +163,8 @@ sArr : [1 2 3 4 5]
 Append Array with Slice:
 sl3 : [1 2 12]
 sArr : [1 2 12 4 5]
+
+Sl4-Make: [    ]
 ```
 
 ## 🌲 File Structure:
