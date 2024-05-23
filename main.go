@@ -31,6 +31,12 @@ func multi(x float64, y int) float64 {
 func getTwo(x int) (int, int) {
 	return x + 1, x - 1
 }
+func fact(f int) int {
+	if f == 0 {
+		return 1
+	}
+	return f * fact(f-1)
+}
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -277,4 +283,6 @@ func main() {
 	pl(getTwo(10))
 	a, b := getTwo(10)
 	pl("A :", a, "\nB :", b)
+
+	pl("\nFactorial of 5:", fact(5))
 }
