@@ -136,6 +136,33 @@ Matrix: [[1 2 3] [4 5 6] [7 8 9]]
 Row 0 [1 2 3]
 Row 1 [4 5 6]
 Row 2 [7 8 9]
+
+I'm a string : abc
+
+Slice Size : 6
+Society
+of
+the
+Simulated
+Universe
+
+Society
+of
+the
+Simulated
+Universe
+
+Full Array:  [1 2 3 4 5]
+1st 2:
+[1 2]
+1st 3 : [1 2 3]
+Last 3 : [3 4 5]
+sl3 : [10 2]
+sArr : [1 2 3 4 5]
+
+Append Array with Slice:
+sl3 : [1 2 12]
+sArr : [1 2 12 4 5]
 ```
 
 ## 🌲 File Structure:
