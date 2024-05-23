@@ -165,6 +165,12 @@ sl3 : [1 2 12]
 sArr : [1 2 12 4 5]
 
 Sl4-Make: [    ]
+
+Hello Function...
+
+Addition Function: 8
+
+Area of Circle Function: 78.5398
 ```
 
 ## 🌲 File Structure:
