@@ -28,6 +28,9 @@ func add(x int, y int) int {
 func multi(x float64, y int) float64 {
 	return x * float64(y) * float64(y)
 }
+func getTwo(x int) (int, int) {
+	return x + 1, x - 1
+}
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -269,4 +272,9 @@ func main() {
 	SayHello()
 	pl("\nAddition Function:", add(3, 5))
 	pl("\nArea of Circle Function:", multi(3.141592, 5))
+
+	pl("\nReturn 2 values:")
+	pl(getTwo(10))
+	a, b := getTwo(10)
+	pl("A :", a, "\nB :", b)
 }
