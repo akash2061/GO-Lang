@@ -203,5 +203,27 @@ func main() {
 	// Byte array to string
 	byteArr := []byte{'a', 'b', 'c'}
 	bStr := string(byteArr[:])
-	pl("I'm a string :", bStr)
+	pl("\nI'm a string :", bStr)
+
+	sl1 := make([]string, 6)
+
+	// Assign values by index
+	sl1[0] = "Society"
+	sl1[1] = "of"
+	sl1[2] = "the"
+	sl1[3] = "Simulated"
+	sl1[4] = "Universe"
+
+	// Size of slice
+	pl("\nSlice Size :", len(sl1))
+
+	// Cycle with for
+	for i := 0; i < len(sl1); i++ {
+		pl(sl1[i])
+	}
+
+	// Cycle with range
+	for _, x := range sl1 {
+		pl(x)
+	}
 }
