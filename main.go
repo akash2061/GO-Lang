@@ -226,4 +226,21 @@ func main() {
 	for _, x := range sl1 {
 		pl(x)
 	}
+
+	sArr := [5]int{1, 2, 3, 4, 5}
+	// Start at 0 index up to but not including the 2nd index
+	pl("Full Array: ",sArr)
+	pl("1st 2:")
+	sl3 := sArr[0:2]
+	pl(sl3)
+
+	// Get slice from beginning
+	pl("1st 3 :", sArr[:3])
+
+	// Get slice to the end
+	pl("Last 3 :", sArr[2:])
+
+	// If you change the array the slice also changes
+	sArr[0] = 10
+	pl("sl3 :", sl3)
 }
