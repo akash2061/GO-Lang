@@ -19,6 +19,10 @@ var pl = fmt.Println               //? Print - Alias
 var text = "This is a global text" //? Global var
 var count = 0                      //? Global Count
 
+func SayHello() {
+	pl("Hello Function...")
+}
+
 func main() {
 	fmt.Println("Hello... Go...!")
 
@@ -229,7 +233,7 @@ func main() {
 
 	sArr := [5]int{1, 2, 3, 4, 5}
 	// Start at 0 index up to but not including the 2nd index
-	pl("Full Array: ",sArr)
+	pl("Full Array: ", sArr)
 	pl("1st 2:")
 	sl3 := sArr[0:2]
 	pl(sl3)
@@ -253,6 +257,8 @@ func main() {
 	pl("sl3 :", sl3)
 	pl("sArr :", sArr)
 
-	sl4 := make([]string,5)
-	pl("\nSl4-Make:",sl4)
+	sl4 := make([]string, 5)
+	pl("\nSl4-Make:", sl4)
+	pl()
+	SayHello()
 }
