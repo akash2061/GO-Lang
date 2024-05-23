@@ -252,4 +252,7 @@ func main() {
 	pl("\nAppend Array with Slice:")
 	pl("sl3 :", sl3)
 	pl("sArr :", sArr)
+
+	sl4 := make([]string,5)
+	pl("\nSl4-Make:",sl4)
 }
