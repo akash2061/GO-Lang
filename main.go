@@ -199,4 +199,9 @@ func main() {
 	for i, row := range matrix_1 {
 		pl("Row", i, row)
 	}
+
+	// Byte array to string
+	byteArr := []byte{'a', 'b', 'c'}
+	bStr := string(byteArr[:])
+	pl("I'm a string :", bStr)
 }
