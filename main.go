@@ -17,7 +17,7 @@ import (
 
 var pl = fmt.Println               //? Print - Alias
 var text = "This is a global text" //? Global var
-var count = 0
+var count = 0                      //? Global Count
 
 func main() {
 	fmt.Println("Hello... Go...!")
