@@ -171,6 +171,30 @@ Hello Function...
 Addition Function: 8
 
 Area of Circle Function: 78.5398
+
+Return 2 values:
+11 9
+A : 11 
+B : 9
+
+Factorial of 5: 120
+
+getSum of: [10 20 30] : 60
+
+Array Sum: [1 3 5 7 9] : 25
+
+A & B Before Swap: 
+A : 2061 
+B : 47
+
+A & B After Swap: 
+A : 47 
+B : 2061
+
+Address of A: 0xc0000961a0
+Address of B: 0xc0000961a8
+Value of A:   47
+Value of B:   2061
 ```
 
 ## 🌲 File Structure:

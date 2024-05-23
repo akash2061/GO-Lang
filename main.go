@@ -37,6 +37,25 @@ func fact(f int) int {
 	}
 	return f * fact(f-1)
 }
+func getSum(nums ...int) int {
+	s := 0
+	for _, num := range nums {
+		s += num
+	}
+	return s
+}
+func arrSum(arr []int) int {
+	s := 0
+	for _, num := range arr {
+		s += num
+	}
+	return s
+}
+func swap(ptr1 *int, ptr2 *int) {
+	temp := *ptr1
+	*ptr1 = *ptr2
+	*ptr2 = temp
+}
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -191,6 +210,7 @@ func main() {
 		}
 	}
 
+	//! Array
 	pl("\nRange:")
 	aNum := []int{10, 20, 30}
 	for _, num := range aNum {
@@ -285,4 +305,22 @@ func main() {
 	pl("A :", a, "\nB :", b)
 
 	pl("\nFactorial of 5:", fact(5))
+	pl("\ngetSum of:", aNum, ":", getSum(aNum...))
+
+	arr := [5]int{1, 3, 5, 7, 9}
+	pl("\nArray Sum:", arr, ":", arrSum(arr[:]))
+
+	//! Pointers
+	a = 2061
+	b = 47
+	pl("\nA & B Before Swap:", "\nA :", a, "\nB :", b)
+	swap(&a, &b)
+	pl("\nA & B After Swap:", "\nA :", a, "\nB :", b)
+	pl()
+	var aPtr *int = &a
+	var bPtr *int = &b
+	pl("Address of A:", aPtr)
+	pl("Address of B:", bPtr)
+	pl("Value of A:  ", *aPtr)
+	pl("Value of B:  ", *bPtr)
 }
