@@ -8,6 +8,17 @@
 ./GO-Lang
 ```
 
+## 🌲 File Structure:
+```plaintext
+.
+├── GO-Lang
+├── README.md
+├── data.txt
+├── go.mod
+└── main.go
+
+1 directory, 5 files
+```
 ## 🗿 Current Output:
 ```
 Hello... Go...!
@@ -201,15 +212,14 @@ Address of: 4 : 0xc0000181a8
 Address of: 6 : 0xc0000181b0
 Address of: 8 : 0xc0000181b8
 Double of Array: [2 4 6 8]
+
+File Created Successfully...
+
+Printing File Contant...
+2
+3
+5
+7
+11
 ```
 
-## 🌲 File Structure:
-```plaintext
-.
-├── GO-Lang
-├── README.md
-├── go.mod
-└── main.go
-
-1 directory, 4 files
-```
