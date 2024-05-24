@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"        //! Read-Input
+	"errors"       //! Handle-Errors
 	"fmt"          //! Print-Format
 	"log"          //! For Errors
 	"math"         //! Math-lib
@@ -382,6 +383,40 @@ func main() {
 			fmt.Println("File deleted successfully.")
 		}
 	*/
+	//! Append to file
+	/*
+		Exactly one of O_RDONLY, O_WRONLY, or O_RDWR must be specified
+
+		O_RDONLY : open the file read-only
+		O_WRONLY : open the file write-only
+		O_RDWR   : open the file read-write
+
+		These can be or'ed
+
+		O_APPEND : append data to the file when writing
+		O_CREATE : create a new file if none exists
+		O_EXCL   : used with O_CREATE, file must not exist
+		O_SYNC   : open for synchronous I/O
+		O_TRUNC  : truncate regular writable file when opened
+	*/
+
+	//! Check if file exists
+	_, err = os.Stat("data.txt")
+	if errors.Is(err, os.ErrNotExist) {
+		pl("File Doesn't Exist")
+	} else {
+		f, err = os.OpenFile("data.txt",
+			os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer f.Close()
+		if _, err := f.WriteString("13\n"); err != nil {
+			log.Fatal(err)
+		}else{
+			pl("\nData Added Successfully...")
+		}
+	}
 	pl()
 
 	//! CLI-Args
