@@ -413,19 +413,9 @@ func main() {
 		defer f.Close()
 		if _, err := f.WriteString("13\n"); err != nil {
 			log.Fatal(err)
-		}else{
+		} else {
 			pl("\nData Added Successfully...")
 		}
 	}
 	pl()
-
-	//! CLI-Args
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run main.go <arg1> [<arg2> ...]")
-	} else {
-		for i, args := range os.Args[1:] {
-			fmt.Printf("Argument %d: %s\n", i+1, args)
-		}
-	}
-	os.Exit(0)
 }
