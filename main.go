@@ -56,6 +56,12 @@ func swap(ptr1 *int, ptr2 *int) {
 	*ptr1 = *ptr2
 	*ptr2 = temp
 }
+func double(arr *[4]int) {
+	for x := 0; x < 4; x++ {
+		arr[x] *= 2
+		pl("Address of:", arr[x], ":", &arr[x])
+	}
+}
 
 func main() {
 	fmt.Println("Hello... Go...!")
@@ -323,7 +329,10 @@ func main() {
 	pl("Address of B:", bPtr)
 	pl("Value of A:  ", *aPtr)
 	pl("Value of B:  ", *bPtr)
+	pl()
 
 	//! Array using Pointer
-	
+	parr := [4]int{1, 2, 3, 4}
+	double(&parr)
+	pl("Double of Array:", parr)
 }
