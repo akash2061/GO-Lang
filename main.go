@@ -367,4 +367,9 @@ func main() {
 	if err := scan1.Err(); err != nil {
 		log.Fatal(err)
 	}
+	pl("\nFile-Description:")
+	pl(os.Stat("data.txt"))
+	pl()
+	pl("File Name:", f.Name())
+	pl("File Descriptor:", f.Fd()) //? Number of time File opened...
 }
