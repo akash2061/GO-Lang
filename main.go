@@ -340,5 +340,18 @@ func main() {
 	pl("Double of Array:", parr)
 
 	//! File-Handling
-	
+	f, err := os.Create("data.txt")
+	if err != nil {
+		log.Fatal(err)
+	} else {
+		pl("\nFile Created Successfully...")
+	}
+	defer f.Close()
+	iPrimeArr := []int{2, 3, 5, 7, 11}
+	for _, num := range iPrimeArr {
+		_, err := f.WriteString(strconv.Itoa(num) + "\n")
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
 }
