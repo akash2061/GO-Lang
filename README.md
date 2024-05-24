@@ -21,6 +21,13 @@
 
 2 directories, 6 files
 ```
+
+## Command-Line Output:
+```
+[/tmp/go-build4007409134/b001/exe/cli]
+
+Max Value : 0
+```
 ## 🗿 Current Output:
 ```
 Hello... Go...!
