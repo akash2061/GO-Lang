@@ -323,4 +323,7 @@ func main() {
 	pl("Address of B:", bPtr)
 	pl("Value of A:  ", *aPtr)
 	pl("Value of B:  ", *bPtr)
+
+	//! Array using Pointer
+	
 }
