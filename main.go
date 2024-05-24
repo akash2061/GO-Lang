@@ -354,4 +354,17 @@ func main() {
 			log.Fatal(err)
 		}
 	}
+	pl("\nPrinting File Contant...")
+	f, err = os.Open("data.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+	scan1 := bufio.NewScanner(f)
+	for scan1.Scan() {
+		pl(scan1.Text())
+	}
+	if err := scan1.Err(); err != nil {
+		log.Fatal(err)
+	}
 }
