@@ -97,6 +97,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	//! Typecast
 	pl("Typecast:")
 	var v1, v2 = 10, 1.5
 	pl(float64(v1) + v2)
@@ -124,6 +125,7 @@ func main() {
 	}
 	pl("ERROR 404: !true ==", !true)
 
+	//! Strings
 	pl("\nStrings:")
 	str = "A word"
 	replacer := strings.NewReplacer("A", "Another")
@@ -176,14 +178,14 @@ func main() {
 	pl("Round(4.4) =", math.Round(4.4))
 	pl("Log2(8) =", math.Log2(8))
 	pl("Log10(100) =", math.Log10(100))
-	// Get the log of e to the power of 2
+	//? Get the log of e to the power of 2
 	pl("Log(7.389) =", math.Log(math.Exp(2)))
 	pl("Max(5,4) =", math.Max(5, 4))
 	pl("Min(5,4) =", math.Min(5, 4))
 
-	// Convert 90 degrees to radians
+	//? Convert 90 degrees to radians
 	r90 := 90 * math.Pi / 180
-	// Convert 1.5708 radians to degrees
+	//? Convert 1.5708 radians to degrees
 	d90 := r90 * (180 / math.Pi)
 	fmt.Printf("%f radians = %f degrees\n", r90, d90)
 	pl("Sin(90) =", math.Sin(r90))
@@ -193,6 +195,7 @@ func main() {
 	fmt.Printf("%.2f\n", 3.141592)
 	fmt.Printf("%9.f\n", 3.141592)
 
+	//! Loops
 	pl("\nFor Loops:")
 	for x := 65; x <= 70; x++ {
 		fmt.Printf("%d - %c\n", x, x)
