@@ -195,6 +195,12 @@ Address of A: 0xc0000961a0
 Address of B: 0xc0000961a8
 Value of A:   47
 Value of B:   2061
+
+Address of: 2 : 0xc0000181a0
+Address of: 4 : 0xc0000181a8
+Address of: 6 : 0xc0000181b0
+Address of: 8 : 0xc0000181b8
+Double of Array: [2 4 6 8]
 ```
 
 ## 🌲 File Structure:
