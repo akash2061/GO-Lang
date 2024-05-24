@@ -372,4 +372,25 @@ func main() {
 	pl()
 	pl("File Name:", f.Name())
 	pl("File Descriptor:", f.Fd()) //? Number of time File opened...
+
+	//! Delete File
+	/*
+		err = os.Remove("data.txt")
+		if err != nil {
+			log.Fatal(err)
+		} else {
+			fmt.Println("File deleted successfully.")
+		}
+	*/
+	pl()
+
+	//! CLI-Args
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: go run main.go <arg1> [<arg2> ...]")
+	} else {
+		for i, args := range os.Args[1:] {
+			fmt.Printf("Argument %d: %s\n", i+1, args)
+		}
+	}
+	os.Exit(0)
 }
