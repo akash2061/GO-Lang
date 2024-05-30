@@ -4,12 +4,12 @@
 
 ###### Note: navigate to download folder. 📂 
 
-```
+```css
 ./GO-Lang
 ```
 
 ## 🌲 File Structure:
-```go
+```ruby
 .
 ├── GO-Lang
 ├── README.md
@@ -28,13 +28,13 @@
 ```
 
 ## Command-Line Output:
-```
+```rust
 [/tmp/go-build4007409134/b001/exe/cli]
 
 Max Value : 0
 ```
 ## 🗿 Current Output:
-```
+```ruby
 Hello... Go...!
 Morningstar_2061 
  akash2061 
