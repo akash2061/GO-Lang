@@ -9,17 +9,22 @@
 ```
 
 ## 🌲 File Structure:
-```plaintext
+```go
 .
 ├── GO-Lang
 ├── README.md
+├── app
+│   ├── go.mod
+│   ├── main.go
+│   └── mypackage
+│       └── mypackage.go
 ├── cli
 │   └── cli.go
 ├── data.txt
 ├── go.mod
 └── main.go
 
-2 directories, 6 files
+4 directories, 9 files
 ```
 
 ## Command-Line Output:
