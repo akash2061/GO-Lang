@@ -11,13 +11,14 @@
 ## 🌲 File Structure:
 ```ruby
 .
-├── GO-Lang
 ├── README.md
 ├── app
 │   ├── go.mod
 │   ├── main.go
 │   └── mypackage
 │       └── mypackage.go
+├── bin
+│   └── GO-Lang
 ├── cli
 │   └── cli.go
 ├── data.txt
