@@ -22,10 +22,12 @@
 ├── cli
 │   └── cli.go
 ├── data.txt
+├── func
+│   └── map_func.go
 ├── go.mod
 └── main.go
 
-4 directories, 9 files
+5 directories, 10 files
 ```
 
 ## Command-Line Output:
