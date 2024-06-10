@@ -254,7 +254,7 @@ func main() {
 	// Byte array to string
 	byteArr := []byte{'a', 'b', 'c'}
 	bStr := string(byteArr[:])
-	pl("\nI'm a string :", bStr)
+	pl("\nI am a string :", bStr)
 
 	sl1 := make([]string, 6)
 

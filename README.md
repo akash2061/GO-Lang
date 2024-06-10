@@ -165,7 +165,7 @@ Row 0 [1 2 3]
 Row 1 [4 5 6]
 Row 2 [7 8 9]
 
-I'm a string : abc
+I am a string : abc
 
 Slice Size : 6
 Society
@@ -244,5 +244,20 @@ File-Description:
 
 File Name: data.txt
 File Descriptor: 7
+
+Data Added Successfully...
+
+Return Form map_func:
+Values: map[1:One 2:Two 3:Three]
+Out of range access : 
+value ok: false
+
+Printing cmd-Map:
+h - help
+v - version
+
+Deleting 2 from values:
+Values: map[1:One 3:Three]
+
 ```
 
