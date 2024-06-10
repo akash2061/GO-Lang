@@ -25,5 +25,12 @@ func Maps() string {
 	_, ok := values[4]
 	pl("value ok:", ok)
 
-	return "Hello Maps"
+	pl("\nPrinting cmd-Map:")
+	for k, n := range cmd {
+		fmt.Printf("%s - %s\n", k, n)
+	}
+	pl("\nDeleting 2 from values:")
+	delete(values, 2)
+	fmt.Printf("Values: %v\n", values)
+	return ""
 }
