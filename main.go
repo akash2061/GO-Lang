@@ -425,4 +425,5 @@ func main() {
 	pl(map_1)
 
 	funcs.Gene()
+	funcs.Str()
 }
