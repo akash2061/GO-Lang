@@ -14,18 +14,18 @@ func Sum[T Constraint](x T, y T) T {
 }
 
 func Gene() {
-	fmt.Print(great())
+	fmt.Print(gen_great())
 	for i := 0; i < 3; i++ {
 		time.Sleep(500 * time.Millisecond)
 		fmt.Print(".")
 	}
 	time.Sleep(500 * time.Millisecond)
-	fmt.Println("\nHii Generics...!")
+	fmt.Println("\nHii Generics...!\n")
 
 	pl("Adding int: ", Sum(5, 4))
 	pl("Adding float64: ", Sum(5.912, 4.726493))
 }
 
-func great() string {
+func gen_great() string {
 	return "Calling Generics"
 }
