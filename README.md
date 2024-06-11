@@ -278,5 +278,9 @@ New-User:
 Valerie-V owns : 1000000.00 Eddied.
 Valerie-V lives at "Corpo-Plaza, City Center, NC"
 
+Full Info:
+{Vincent-V Motel Kabuki Market, NC 15324.609}
+{Valerie-V Corpo-Plaza, City Center, NC 1e+06}
+
 ```
 

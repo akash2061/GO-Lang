@@ -26,6 +26,10 @@ func Cyber_Str() {
 	v := custom{"Valerie-V", "Corpo-Plaza, City Center, NC", 1_000_000.00}
 	pl("\nNew-User:")
 	cInfo(v)
+
+	pl("\nFull Info:")
+	pl(c1)
+	pl(v)
 }
 
 func cInfo(c custom) {
