@@ -425,5 +425,5 @@ func main() {
 	pl(map_1)
 
 	funcs.Gene()
-	funcs.Str()
+	funcs.Cyber_Str()
 }

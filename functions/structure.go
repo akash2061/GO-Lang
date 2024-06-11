@@ -11,7 +11,7 @@ type custom struct {
 	bal  float64
 }
 
-func Str() {
+func Cyber_Str() {
 	pl(str_great())
 	var c1 custom
 	c1.name = "Vincent-V"
