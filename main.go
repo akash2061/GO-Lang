@@ -426,4 +426,5 @@ func main() {
 
 	funcs.Gene()
 	funcs.Cyber_Str()
+	funcs.Compos()
 }

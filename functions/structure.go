@@ -41,7 +41,7 @@ func uAddr(c *custom, addrs string) {
 }
 
 func str_great() string {
-	fmt.Print("\nLoating Structures")
+	fmt.Print("\nLoading Structures")
 	for i := 0; i < 3; i++ {
 		time.Sleep(500 * time.Millisecond)
 		fmt.Print(".")

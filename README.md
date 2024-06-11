@@ -267,7 +267,7 @@ Hii Generics...!
 Adding int:  9
 Adding float64:  10.638493
 
-Loating Structures...
+Loading Structures...
 
 Vincent-V owns : 15324.61 Eddied.
 Vincent-V lives at "8 Megabuilding H10, NC"
