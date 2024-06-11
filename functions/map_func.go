@@ -1,4 +1,4 @@
-package map_func
+package functions
 
 import (
 	"fmt"
