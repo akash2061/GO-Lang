@@ -20,8 +20,8 @@ func Gene() {
 		fmt.Print(".")
 	}
 	time.Sleep(500 * time.Millisecond)
-	fmt.Println("\nHii Generics...!\n")
-
+	pl("\nHii Generics...!")
+	pl()
 	pl("Adding int: ", Sum(5, 4))
 	pl("Adding float64: ", Sum(5.912, 4.726493))
 }
