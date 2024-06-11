@@ -15,7 +15,7 @@ import (
 	"unicode/utf8" //! Runes-Count
 	"unsafe"       //! SizeOf
 
-	map_func "github.com/akash2061/GO-Lang/func"
+	funcs "github.com/akash2061/GO-Lang/functions"
 )
 
 var pl = fmt.Println               //? Print - Alias
@@ -421,6 +421,8 @@ func main() {
 	}
 	pl()
 	pl("Return Form map_func:")
-	map_1 := map_func.Maps()
+	map_1 := funcs.Maps()
 	pl(map_1)
+
+	funcs.Gene()
 }
