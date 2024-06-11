@@ -22,12 +22,14 @@
 ├── cli
 │   └── cli.go
 ├── data.txt
-├── func
-│   └── map_func.go
+├── functions
+│   ├── generics.go
+│   ├── map_func.go
+│   └── structure.go
 ├── go.mod
 └── main.go
 
-5 directories, 10 files
+5 directories, 12 files
 ```
 
 ## Command-Line Output:
@@ -258,6 +260,23 @@ v - version
 
 Deleting 2 from values:
 Values: map[1:One 3:Three]
+
+Calling Generics...
+Hii Generics...!
+
+Adding int:  9
+Adding float64:  10.638493
+
+Loating Structures...
+
+Vincent-V owns : 15324.61 Eddied.
+Vincent-V lives at "8 Megabuilding H10, NC"
+
+Vincent-V completing gigs at Address : Motel Kabuki Market, NC
+
+New-User:
+Valerie-V owns : 1000000.00 Eddied.
+Valerie-V lives at "Corpo-Plaza, City Center, NC"
 
 ```
 
