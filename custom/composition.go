@@ -16,7 +16,8 @@ type business struct {
 }
 
 func (b business) info() {
-	fmt.Printf("Contact: %s at %s", b.contact.Name, b.name)
+	fmt.Printf("Contact: %s at %s\n", b.contact.Name, b.name)
+	pl("For Full Info Call: " + b.contact.number + " or Visit: " + b.addr)
 }
 func Compos() {
 	pl(cmp_great())
@@ -26,7 +27,7 @@ func Compos() {
 	}
 	b1 := business{
 		"Arasaka-Corporation",
-		"City Center, NC",
+		"Arasaka Tower, City Center, NC",
 		c1,
 	}
 	b1.info()
@@ -39,5 +40,5 @@ func cmp_great() string {
 		fmt.Print(".")
 	}
 	time.Sleep(500 * time.Millisecond)
-	return "\n"
+	return ""
 }
