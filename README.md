@@ -15,21 +15,23 @@
 ├── app
 │   ├── go.mod
 │   ├── main.go
-│   └── mypackage
-│       └── mypackage.go
+│   └── utils
+│       └── utils.go
 ├── bin
 │   └── GO-Lang
 ├── cli
 │   └── cli.go
-├── data.txt
-├── functions
+├── custom
+│   ├── composition.go
 │   ├── generics.go
 │   ├── map_func.go
-│   └── structure.go
+│   ├── structure.go
+│   └── user_defined_types.go
+├── data.txt
 ├── go.mod
 └── main.go
 
-5 directories, 12 files
+5 directories, 14 files
 ```
 
 ## Command-Line Output:
@@ -281,6 +283,15 @@ Valerie-V lives at "Corpo-Plaza, City Center, NC"
 Full Info:
 {Vincent-V Motel Kabuki Market, NC 15324.609}
 {Valerie-V Corpo-Plaza, City Center, NC 1e+06}
+
+Loading Composition...
+Contact: V at Arasaka-Corporation
+For Full Info Call: 555-1212 or Visit: Arasaka Tower, City Center, NC
+
+User Defined Datatypes...
+
+3 tps = 14.76 mL
+2 tbs = 29.58 mL
 
 ```
 
