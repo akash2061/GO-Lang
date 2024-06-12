@@ -15,7 +15,7 @@ import (
 	"unicode/utf8" //! Runes-Count
 	"unsafe"       //! SizeOf
 
-	funcs "github.com/akash2061/GO-Lang/functions"
+	funcs "github.com/akash2061/GO-Lang/custom"
 )
 
 var pl = fmt.Println               //? Print - Alias
