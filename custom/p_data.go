@@ -11,7 +11,7 @@ type Date struct {
 	year  int
 }
 
-func (d *Date) SetDat(day int) error {
+func (d *Date) SetDay(day int) error {
 	if (day < 1) || (day > 31) {
 		return errors.New("ERROR: Incorrect day value")
 	}
