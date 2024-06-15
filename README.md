@@ -35,7 +35,7 @@
 5 directories, 15 files
 ```
 
-## Command-Line Output:
+<!-- ## Command-Line Output:
 ```rust
 [/tmp/go-build4007409134/b001/exe/cli]
 
@@ -295,4 +295,4 @@ User Defined Datatypes...
 2 tbs = 29.58 mL
 
 ```
-
+ -->
