@@ -65,7 +65,23 @@ func double(arr *[4]int) {
 		pl("Address of:", arr[x], ":", &arr[x])
 	}
 }
-
+func funcs_date() {
+	func_date := funcs.Date{}
+	pl("Function Date:", func_date)
+	func_err := func_date.SetDay(12)
+	if func_err != nil {
+		log.Fatal(func_err)
+	}
+	func_err = func_date.SetMonth(6)
+	if func_err != nil {
+		log.Fatal(func_err)
+	}
+	func_err = func_date.SetYear(1974)
+	if func_err != nil {
+		log.Fatal(func_err)
+	}
+	pl("Function Date:", func_date.Day(), "/", func_date.Month(), "/", func_date.Year())
+}
 func main() {
 	fmt.Println("Hello... Go...!")
 
@@ -430,21 +446,5 @@ func main() {
 	funcs.Udt()
 	pl()
 	funcs_date()
-}
-func funcs_date() {
-	func_date := funcs.Date{}
-	pl("Function Date:", func_date)
-	func_err := func_date.SetDay(12)
-	if func_err != nil {
-		log.Fatal(func_err)
-	}
-	func_err = func_date.SetMonth(6)
-	if func_err != nil {
-		log.Fatal(func_err)
-	}
-	func_err = func_date.SetYear(1974)
-	if func_err != nil {
-		log.Fatal(func_err)
-	}
-	pl("Function Date:", func_date.Day(), "/", func_date.Month(), "/", func_date.Year())
+	funcs.Func_inter()
 }
