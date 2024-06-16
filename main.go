@@ -446,7 +446,7 @@ func main() {
 	custom.Udt()
 	pl()
 	custom_date()
-	custom.Cli()
+	// custom.Cli()
 	custom.Fmt_val()
 	custom.Func_inter()
 }
