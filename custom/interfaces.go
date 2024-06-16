@@ -9,6 +9,6 @@ func Func_inter() {
 }
 
 func great_inter() string {
-	fmt.Println("\nINterfaces:")
+	fmt.Println("\nInterfaces:")
 	return "\n"
 }
