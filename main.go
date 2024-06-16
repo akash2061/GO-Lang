@@ -447,5 +447,6 @@ func main() {
 	pl()
 	custom_date()
 	custom.Cli()
+	custom.Fmt_val()
 	custom.Func_inter()
 }
