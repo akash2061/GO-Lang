@@ -1,14 +1,12 @@
 package custom
 
-import (
-	"fmt"
-)
+import "log"
 
 func Func_inter() {
 	great_inter()
 }
 
 func great_inter() string {
-	fmt.Println("\nInterfaces:")
+	log.Println("Interfaces:")
 	return "\n"
 }
