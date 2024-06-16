@@ -11,11 +11,12 @@ var pl = fmt.Println
 
 func main() {
 	pl()
-	pl(os.Args)
+	pl("OS Args-[Stock]:\t", os.Args)
 	pl()
 	// Get all values after the first index
 	args := os.Args[1:]
-
+	pl("OS Args-[Refined]:\t", args)
+	pl()
 	// Create int array from string array
 	var iArgs = []int{}
 	for _, i := range args {

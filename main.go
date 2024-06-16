@@ -15,7 +15,7 @@ import (
 	"unicode/utf8" //! Runes-Count
 	"unsafe"       //! SizeOf
 
-	funcs "github.com/akash2061/GO-Lang/custom"
+	custom "github.com/akash2061/GO-Lang/custom"
 )
 
 var pl = fmt.Println               //? Print - Alias
@@ -65,8 +65,8 @@ func double(arr *[4]int) {
 		pl("Address of:", arr[x], ":", &arr[x])
 	}
 }
-func funcs_date() {
-	func_date := funcs.Date{}
+func custom_date() {
+	func_date := custom.Date{}
 	pl("Function Date:", func_date)
 	func_err := func_date.SetDay(12)
 	if func_err != nil {
@@ -437,14 +437,15 @@ func main() {
 	}
 	pl()
 	pl("Return Form map_func:")
-	map_1 := funcs.Maps()
+	map_1 := custom.Maps()
 	pl(map_1)
 
-	funcs.Gene()
-	funcs.Cyber_Str()
-	funcs.Compos()
-	funcs.Udt()
+	custom.Gene()
+	custom.Cyber_Str()
+	custom.Compos()
+	custom.Udt()
 	pl()
-	funcs_date()
-	funcs.Func_inter()
+	custom_date()
+	custom.Cli()
+	custom.Func_inter()
 }
