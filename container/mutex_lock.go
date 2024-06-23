@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 var pl = fmt.Println
@@ -30,9 +31,13 @@ func (a *Account) Withdraw(v int) {
 }
 
 func main() {
-	var acc Account 
-	acc.balance = 100
+	var acc Account
+	acc.balance = 150
 
 	pl("Balance:", acc.GetBalance())
-	
+	for i := 0; i < 12; i++ {
+		pl("Attempt:", i)
+		go acc.Withdraw(15)
+	}
+	time.Sleep(2 * time.Second)
 }
