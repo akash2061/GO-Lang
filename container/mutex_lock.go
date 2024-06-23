@@ -19,7 +19,8 @@ func (a *Account) GetBalance() int {
 	return a.balance
 }
 
-func (a *Account) Withdraw(v int) {
+func (a *Account) Withdraw(v int, i int) {
+	pl("Attempt:", i)
 	a.lock.Lock()
 	defer a.lock.Unlock()
 	if v > a.balance {
@@ -36,8 +37,8 @@ func main() {
 
 	pl("Balance:", acc.GetBalance())
 	for i := 0; i < 12; i++ {
-		pl("Attempt:", i)
-		go acc.Withdraw(15)
+		// pl("Attempt:", i)
+		go acc.Withdraw(15, i)
 	}
 	time.Sleep(2 * time.Second)
 }
