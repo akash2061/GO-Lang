@@ -41,4 +41,13 @@ func main() {
 		go acc.Withdraw(15, i)
 	}
 	time.Sleep(2 * time.Second)
+	for i := 0; i < 5; i++ {
+		pl("Closures:")
+
+		val := func() {
+			i += 1
+		}
+		val()
+		pl("Closure of I:", i)
+	}
 }
